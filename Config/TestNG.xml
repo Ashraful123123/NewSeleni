@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >//we get this code from TstNG.org//
+
+<suite name="Suite1" verbose="1">
+
+    <test name="Nopackage">
+        <classes>		//This package name and class name should be exact same,without that my automation will not work//
+            <class name="com.nexttech.testrunner.TestNGTestrunner"/>//We only change here,destination of TestNGTestrunner//
+        </classes>		//Giving the path, where is my TestNGTestrunner Class//
+        				//Package and and the class
+    </test>
+</suite>			 //In TestNG xml File we keep the path of TestNGTestTestrunner//
+					//it checks what test case it need to execute
+	
+ //We are using this TestNg file, to execute our Automation code//
+ //Also we are geting the HTML Report from this File for TestNG.xml//
+ 
+ 
+ //When we execute the code, first it will hit in TestNg file//
+ //It Will check what I have inside the TestNg//
+ //It will see The path where it will have to go,Then it will go to the TestNGTestrunner Class//
+ 
+ ---------------------
+ 
+ //Then In the TestNgTestrunner Class,In CucumberOptions it will see that 
+ //Features Folder and stepdefs Package are glued up//
+-----------
+ //Then It will check what is inside the Features Folder
+ //It will check the first line of scenario ----Given User Visits Facebook Homepage---
+ //And will try to match in the Class that we have created in StepDefs Package
+ //With the same name like in Featues Folder we have FBHomepage.feature and
+ //in stepdefs Package FBHomepage.java---it will check that line----Given User Visits Facebook Homepage---
+ //When it match with that, then it will execute
+ -------------------
+ 
+ //First it will open the browser then it will open the url//passed or failed
+ --------
+ ///After checking The Given line
+ //Same thing will be done for the line---And,When,----
+ ----------
+ //If we Have Test data in the Feature file It will take the data, and wiil go
+ //inside the class with the same name --try to match line of WHEN--
+ ///Then it will execute//
+ 
